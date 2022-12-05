@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.buatthumbnail {
+    background: linear-gradient(rgba(15, 15, 15, 0.719), rgba(15, 15, 15, 0.719)), url('https://source.unsplash.com/1600x950/?indonesia');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 105vh;
+    margin-top: -105px;
+}
+
+.popup {
+    position: fixed;
+    top: 1;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #d2d4d5;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -90px;
+}
+
+.nav-link:hover {
+    color: #2e77ae !important;
+}
+
+.nav-link {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2e77ae;
+    transition: width 0.25s ease-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    color: #2e77ae;
+}
+
+.nyala::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2e77ae;
+    color: #2e77ae;
+    transition: width 0.25s ease-out;
+}
+
+.nyala {
+    color: #2e77ae;
+}
+
+.wrap {
+    max-width: 100%;
+}
+
+.container,
+.wrapper {
+    animation: transisiMasuk 0.75s ease;
+}
+
+@keyframes transisiMasuk {
+    from {
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.form-registration input:focus,
+.form-signin input:focus {
+    box-shadow: 0px 5px #0d6efd;
+    border-color: #0d6efd;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+}
+
+.nav-color {
+    background-color: #f8f8f8;
+    transition: all 0.3s ease 0s;
+}
+
+.bg-self,
+.bg-hitam {
+    transition: all 0.3s ease 0s;
+}
+
+.bg-hitam {
+    background-color: #07131f;
+}
+
+.bg-self {
+    background: linear-gradient(rgba(15, 15, 15, 0.719), rgba(255, 255, 255, 0));
+}
+
+.judul-main {
+    font-size: 60px;
+    color: #e9f1f9;
+    margin-left: 5%;
+}
+
+@media (max-width: 1300px) {
+    .judul-main {
+        font-size: 50px;
+        color: #e9f1f9;
+    }
+}
+
+@media (max-width: 1100px) {
+    .judul-main {
+        font-size: 40px;
+        color: #e9f1f9;
+    }
+}
+
+@media (max-width: 900px) {
+    .judul-main {
+        font-size: 40px;
+        color: #e9f1f9;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+}
+
+.kurtaw {
+    background-color: #e9f1f9;
+}
+
+.text {
+    position: relative;
+    top: 40vh;
+}
+
+.ketour {
+    font-size: 20px;
+    margin-left: 5%;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border: none;
+    color: #e9f1f9;
+    background-color: #2e77ae;
+    transition: all 0.3s ease 0s;
+}
+
+.button {
+    color: #e9f1f9;
+    font-family: 'Montserrat', sans-serif
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.ketour:hover {
+    border: solid 1px #d2d4d5;
+    background-color: #2e76ae00;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    color: #2892fc;
+}
+
+@media (max-width: 1300px) {
+    .ketour {
+        font-size: 19px;
+        color: #e9f1f9;
+        transition: all 0.3 ease 0s;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ketour {
+        font-size: 18px;
+        color: #e9f1f9;
+        transition: all 0.3 ease 0s;
+    }
+}
+
+@media (max-width: 900px) {
+    .ketour {
+        font-size: 16px;
+        color: #e9f1f9;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .text {
+        align-items: center;
+    }
+}
+
+.praktis {
+    width: 210px;
+    position: relative;
+    top: -20px;
+    left: 23%;
+}
+
+.wrap2 {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.splitter-white {
+    background-color: #e9f1f9;
+}
+
+.scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 16%;
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior: contain;
+    padding-left: 10%;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 15vw;
+    object-fit: cover !important;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 9vw !important;
+    object-fit: cover !important;
+}
+
+.bungkus {
+    width: 80vw;
+    margin: 2rem;
+}
+
+.gambar {
+    columns: 4;
+}
+
+.gambar img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.flex-auto {
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    font-size: 2.5rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
